@@ -292,7 +292,6 @@ body {
                         }
 
                         & .pink_text {
-
                             color: #F9458E;
                             text-align: center;
                             font-size: 2rem;
@@ -321,6 +320,22 @@ la parte del popup o slider vertical */
                 align-items: center;
                 margin-top: 5rem;
 
+                & .leftcorners {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: space-between;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
+                & .rightcorners {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: space-between;
+                    height: 100%;
+                    justify-content: space-between;
+                }
+
                 & .first-container {
                     width: 37.5%;
                     height: 100%;
@@ -340,6 +355,21 @@ la parte del popup o slider vertical */
                         padding: 3rem;
                         box-sizing: border-box;
 
+                    &.topcorners {
+                        display: flex;
+                        flex-direction: row;
+                    align-content: space-between;
+                    width: 100%;
+                    justify-content: space-between;
+                    }
+
+                    & .bottomcorners {
+                        display: flex;
+                        flex-direction: row;
+                    align-content: space-between;
+                    width: 100%;
+                    justify-content: space-between;
+                    }
                         & h2 {
                             font-family: 'Lora';
                             font-style: normal;
