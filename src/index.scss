@@ -352,24 +352,23 @@ la parte del popup o slider vertical */
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        padding: 3rem;
+                        padding: 1rem;
                         box-sizing: border-box;
 
-                    &.topcorners {
+                    & .topcorners {
                         display: flex;
                         flex-direction: row;
-                    align-content: space-between;
-                    width: 100%;
-                    justify-content: space-between;
+                        width: 100%;
+                        justify-content: space-between;
                     }
 
                     & .bottomcorners {
                         display: flex;
                         flex-direction: row;
-                    align-content: space-between;
-                    width: 100%;
-                    justify-content: space-between;
+                        width: 100%;
+                        justify-content: space-between;
                     }
+
                         & h2 {
                             font-family: 'Lora';
                             font-style: normal;
@@ -407,8 +406,22 @@ la parte del popup o slider vertical */
                         justify-content: center;
                         align-items: center;
                         flex-direction: column;
-                        padding: 3rem;
+                        padding: 1rem;
                         box-sizing: border-box;
+
+                        & .topcorners {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            justify-content: space-between;
+                        }
+    
+                        & .bottomcorners {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            justify-content: space-between;
+                        }
 
                         & h2 {
                             font-family: 'Lora';
