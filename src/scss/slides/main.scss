@@ -23,7 +23,6 @@ main {
                     flex-direction: column;
 
                     & .initial-title {
-
                         h1 {
                             @include m.fonts('Lora', italic, none, 9rem, none);
                             @include m.spaces(0, 0);
@@ -34,6 +33,12 @@ main {
                     & .description {
                         @include m.fonts('Lora', normal, none, 2rem, center);
                         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+                        p {
+                            flex-grow: 1;
+                            display: 'inline-block';
+                            text-align: 'justify';
+                        }
                     }
                 }
 
@@ -69,5 +74,159 @@ main {
                 }
             }
         }
+    }
+}
+
+// @media (max-width: 640px) {
+//     .center-content {
+//         width: 20rem !important;
+
+//         & .initial-title {
+//             h1 {
+//                 font-size: 1.5rem !important;
+//             }
+//         }
+//     }
+// }
+
+// @media (max-width: 375px) {
+
+//     .center-content {
+//         width: 30rem !important;
+
+//         & .initial-title {
+//             h1 {
+//                 font-size: 3.5rem !important;
+//             }
+//         }
+//     }
+
+//     .description {
+//         font-size: 1rem !important;
+//         width: 350px !important;
+//     }
+
+//     .buttons {
+//         width: 375px !important;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center !important;
+
+//         & a {
+//             width: 100px !important;
+//             height: 30px !important;
+//             font-size: 0.8rem !important;
+//             text-align: center;
+//             line-height: 15px !important;
+//         }
+//     }
+// }
+
+
+//from 360px to 600px (Extra small devices)
+@media (max-width: 600px) and (min-width:360px) {
+    main {
+        .initial-content {
+            margin-top: 1rem;
+
+            .center-content {
+                @include m.sizing(40rem, none);
+
+                & .initial-title {
+                    margin-bottom: 1rem;
+
+                    h1 {
+                        font-size: 4rem !important;
+                    }
+                }
+            }
+
+            .description {
+                @include m.sizing(17rem, none);
+                font-size: 1.2rem !important;
+            }
+
+            .buttons {
+                @include m.sizing(5rem, 12.5rem);
+                @include m.flex(space-around, center);
+                flex-direction: column;
+                align-content: space-around;
+
+                & a {
+                    @include m.sizing(8rem, 2rem);
+                    font-size: 1rem !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+//from 601px to 900px ( portrait tablets, large phone, landscape tablets,
+@media (max-width: 900px) and (min-width:601px) {
+    main {
+        & .initial-content {
+            margin-top: 1rem;
+
+            .center-content {
+                @include m.sizing(40rem, none);
+
+                & .initial-title {
+                    margin-bottom: 1rem;
+
+                    h1 {
+                        font-size: 6rem !important;
+                    }
+                }
+            }
+
+            .description {
+                @include m.sizing(30rem, none);
+                font-size: 1.5rem !important;
+            }
+
+            .buttons {
+                @include m.sizing(5rem, 12.5rem);
+                @include m.flex(space-around, center);
+                flex-direction: column;
+                align-content: space-around;
+
+                & a {
+                    @include m.sizing(12.5rem, 2rem);
+                    font-size: 1.5rem !important;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// Large devices (laptops/desktops, large laptops and desktops) Adjusting description
+@media (max-width: 1250px) and (min-width:901px) {
+    main {
+        .initial-content {
+            margin-top: 1rem;
+
+            & .initial-title {
+                margin-bottom: 1rem;
+
+                h1 {
+                    font-size: 8rem !important;
+                }
+            }
+
+            .description {
+                @include m.sizing(45rem, none);
+                font-size: 1.75rem !important;
+            }
+        }
+    }
+}
+
+// Large devices (laptops/desktops, large laptops and desktops) Before Desktop
+@media (max-width:1360px) and (min-width:121px) {
+
+    .description {
+        font-size: 2rem !important;
     }
 }
