@@ -16,7 +16,7 @@ main {
 
             & .slide-right-1 {
                 @include m.sizing(auto, 100%);
-                @include m.flex(end, center);
+                @include m.flex(center, center);
                 flex-direction: column;
 
                 & .center-content {
@@ -57,7 +57,7 @@ main {
 
                     & .pink_text {
                         color: #F9458E;
-                        @include m.fonts('Lora', italic, bold, 2rem, center);
+                        @include m.fonts('Nunito', italic, bold, 2rem, center);
                         @include m.sizing(20%, none); //60% cuando cambiamos al popup
 
                         p {
@@ -142,7 +142,7 @@ main {
                         line-height: 120%;
 
                         & h2 {
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 700;
                             display: flex;
@@ -154,7 +154,7 @@ main {
                         }
 
                         & p {
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 500;
                             display: flex;
@@ -215,7 +215,7 @@ main {
                         line-height: 120%;
 
                         & h2 {
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 700;
                             display: flex;
@@ -227,7 +227,7 @@ main {
                         }
 
                         & p {
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 500;
                             display: flex;
@@ -249,7 +249,7 @@ main {
                 align-items: center;
 
                 & .secondary-title {
-                    font-family: 'Lora';
+                    font-family: 'Nunito';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 3rem;
@@ -262,7 +262,7 @@ main {
                     height: 3.6rem;
                     width: 75%;
                     background-color: #FFFFFF;
-                    font-family: 'Lora';
+                    font-family: 'Nunito';
                     font-style: italic;
                     font-weight: 700;
                     color: #F9458E;
@@ -333,7 +333,7 @@ main {
                         color: #F9458E;
                         text-align: center;
                         font-size: 1.5rem;
-                        font-family: 'Lora';
+                        font-family: 'Nunito';
                         font-style: italic;
                         font-weight: bold;
                         padding: 0 2rem 2rem;
@@ -420,7 +420,7 @@ main {
                     @include m.flex(start, center);
                     flex-direction: column;
                     @include m.sizing(60%, 10%);
-                    font-family: 'Lora';
+                    font-family: 'Nunito';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 2rem;
@@ -472,7 +472,7 @@ main {
 
                         & h2 {
                             font-size: 1.5rem;
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 700;
                             display: flex;
@@ -484,7 +484,7 @@ main {
 
                         & p {
                             font-size: 0.9rem;
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 500;
                             display: flex;
@@ -567,7 +567,7 @@ main {
                     @include m.flex(start, center);
                     flex-direction: column;
                     @include m.sizing(60%, 10%);
-                    font-family: 'Lora';
+                    font-family: 'Nunito';
                     font-style: normal;
                     font-weight: 700;
                     font-size: 2.5rem;
@@ -619,7 +619,7 @@ main {
 
                         & h2 {
                             font-size: 1.5rem;
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 700;
                             display: flex;
@@ -631,7 +631,7 @@ main {
 
                         & p {
                             font-size: 1.1rem;
-                            font-family: 'Lora';
+                            font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 500;
                             display: flex;

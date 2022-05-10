@@ -10,7 +10,7 @@ header {
 
         & .logo {
             @include m.sizing(15.625rem, none);
-            @include m.flex(space-around, center);
+            @include m.flex(space-evenly, center);
 
             & img {
                 @include m.sizing(4.5rem, 4.5rem);
@@ -23,10 +23,16 @@ header {
 
             & .title {
                 color: white;
-                @include m.fonts('Lora', normal, bold, 1.5rem, none);
+                @include m.fonts('Nunito', normal, bold, 1.5rem, none);
                 @include m.flex(none, flex-end);
                 margin-left: 0.5rem;
+                -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .3));
+                filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .3));
                 //visibility: hidden;
+
+                p {
+                    @include m.spaces(0.5rem 0rem 0rem 0rem, 0);
+                }
             }
         }
     }

@@ -102,7 +102,7 @@ main {
 
                             p {
                                 @include m.spaces(0, 0);
-                                @include m.fonts('Lora', normal, 600, 1.8rem, none);
+                                @include m.fonts('Nunito', normal, 600, 1.8rem, none);
                                 color: #663C11;
                                 z-index: 6;
                             }
@@ -203,7 +203,7 @@ main {
 
                             p {
                                 @include m.spaces(0, 0);
-                                @include m.fonts('Lora', normal, 600, 1.8rem, none);
+                                @include m.fonts('Nunito', normal, 600, 1.8rem, none);
                                 color: #663C11;
                                 z-index: 6;
                             }
@@ -236,7 +236,7 @@ main {
 
                     & .title {
                         margin: 0;
-                        @include m.fonts('Lora', italic, bold, 2rem, none);
+                        @include m.fonts('Nunito', italic, bold, 2rem, none);
                         color: #FFF0D4;
                         text-shadow: 4px 4px 0px #663C11;
                         transition: all 1s;

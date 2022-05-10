@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   eslint: ^8.12.0
@@ -14,7 +14,7 @@ specifiers:
 
 devDependencies:
   eslint: 8.12.0
-  eslint-config-standard: 17.0.0-1_23e6e7423e3a342be2defe31277e084d
+  eslint-config-standard: 17.0.0-1_eptooqr6hi2cxyw67yyso7qiju
   eslint-plugin-import: 2.25.4_eslint@8.12.0
   eslint-plugin-n: 14.0.0_eslint@8.12.0
   eslint-plugin-promise: 6.0.0_eslint@8.12.0
@@ -728,7 +728,7 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
-  /eslint-config-standard/17.0.0-1_23e6e7423e3a342be2defe31277e084d:
+  /eslint-config-standard/17.0.0-1_eptooqr6hi2cxyw67yyso7qiju:
     resolution: {integrity: sha512-aqRG58dqoBNfOLN+PsitasxmW+W9Os4oQrx081B16T4E4WogsSbpUL6hnKSnyv35sSRYA2XjBtKMOrUboL6jgw==}
     peerDependencies:
       eslint: ^8.0.1

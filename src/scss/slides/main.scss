@@ -31,14 +31,8 @@ main {
                     }
 
                     & .description {
-                        @include m.fonts('Lora', normal, none, 2rem, center);
+                        @include m.fonts('Nunito', normal, none, 2rem, center);
                         text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-                        p {
-                            flex-grow: 1;
-                            display: 'inline-block';
-                            text-align: 'justify';
-                        }
                     }
                 }
 
@@ -47,8 +41,8 @@ main {
                     margin-top: 0.5rem;
 
                     & .btn {
-                        @include m.spaces(0px 12px, 12px);
-                        @include m.fonts('Lora', italic, 700, 1.6rem, center);
+                        @include m.spaces(0rem 1rem, 0.6rem 1rem);
+                        @include m.fonts('Nunito', normal, 700, 1.5rem, center);
                         background: #F9458E;
                         mix-blend-mode: normal;
                         border-radius: 7px;
@@ -56,7 +50,8 @@ main {
                         color: #FFFFFF;
                         border: none;
                         cursor: pointer;
-                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25)
+                        //border: 2px solid white;
+                        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
                     }
 
                     a {
@@ -66,7 +61,7 @@ main {
 
                 & .guest {
                     color: #FFFFFF;
-                    @include m.fonts('Lora', normal, bold, 1.8rem, none);
+                    @include m.fonts('Nunito', normal, bold, 1.8rem, none);
                     @include m.spaces(1rem, 0);
                     cursor: pointer;
                     //text-decoration: underline;
