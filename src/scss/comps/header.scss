@@ -1,4 +1,4 @@
-@use '../mixins/mixins.scss'as m;
+@use '../mixins/mixins.scss' as m;
 
 header {
 
@@ -8,9 +8,13 @@ header {
         @include m.sizing(100%, 7.5rem);
         @include m.flex(space-between, center);
 
-        & .logo {
+        & .container {
             @include m.sizing(15.625rem, none);
-            @include m.flex(space-evenly, center);
+
+            & .logo {
+                @include m.flex(space-evenly, center);
+                text-decoration: none;
+            }
 
             & img {
                 @include m.sizing(4.5rem, 4.5rem);

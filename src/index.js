@@ -47,10 +47,16 @@ const swiper2 = new Swiper(".swiper-container2", {
 });
 
 let burguerMenu = document.querySelector("#menu");
+let redirectBtn = document.getElementById("myButton");
 
 burguerMenu.addEventListener("click", openMenu);
+redirectBtn.addEventListener("click", redirectRegister);
 
 function openMenu() {
     document.querySelector("#menu").classList.toggle("deploy");
     document.querySelector(".hamburguer").classList.toggle("completed");
+}
+
+function redirectRegister() {
+    location.href = "web.pitayapp.com";
 }
