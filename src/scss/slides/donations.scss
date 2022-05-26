@@ -3,7 +3,6 @@
 main {
     & #donations {
         position: relative;
-        //z-index: 1;
         @include m.sizing(100vw, 100vh);
         @include m.flex(center, center);
         @include m.backgrounds(url(./img/donationsPic.jpg), cover, center, no-repeat);
@@ -19,7 +18,7 @@ main {
                 @include m.flex(center, center);
                 flex-direction: column;
 
-                & .center-content {
+                & .center-content-donations {
                     width: 50rem;
                     margin-top: 1rem;
                     display: flex;
@@ -39,7 +38,6 @@ main {
 
     & #swipe-donations {
         position: relative;
-        //z-index: 1;
         @include m.sizing(100vw, 100vh);
         @include m.flex(center, center);
         @include m.backgrounds(url(./img/donationsPic.jpg), cover, center, no-repeat);
@@ -66,7 +64,6 @@ main {
 
             & .donations-explain {
                 @include m.sizing(100%, 60%);
-                //background-color: green;
                 @include m.flex(center, center);
 
                 & .box {
@@ -74,16 +71,13 @@ main {
                 }
 
                 & .first-container {
-                    display: grid;
-                    //background-color: cadetblue;
+                    @include m.grid(1fr 2fr 6fr 2fr 1fr, 1.5fr 2.5fr 5fr 2.5fr 1.5fr);
                     @include m.sizing(25%, 85%);
-                    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-                    grid-template-rows: 1.5fr 2.5fr 5fr 2.5fr 1.5fr;
 
                     & .first-tape {
                         grid-column: 1 / 3;
                         grid-row: 1 / 3;
-                        z-index: 10;
+                        z-index: 5;
                         @include m.flex(center, center);
 
                         img {
@@ -108,8 +102,9 @@ main {
 
                             p {
                                 @include m.spaces(0, 0);
-                                @include m.fonts('Lora', normal, 600, 1.8rem, none);
+                                @include m.fonts('Nunito', normal, 600, 1.8rem, none);
                                 color: #663C11;
+                                z-index: 6;
                             }
                         }
                     }
@@ -117,10 +112,7 @@ main {
                     & .second-tape {
                         grid-column: 4 / 6;
                         grid-row: 4 / 6;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        z-index: 10;
+                        @include m.flex(center, center);
 
                         img {
                             @include m.sizing(6rem, 6rem);
@@ -129,18 +121,16 @@ main {
                 }
 
                 & .second-container {
-                    display: grid;
-                    @include m.sizing(15%, 42%);
+                    @include m.grid(4fr 3fr 4fr, 1fr 0.5fr 3.5fr);
+                    @include m.sizing(15%, 45%);
                     @include m.spaces(0rem 0rem 2rem 0rem, 0);
-                    grid-template-columns: 4fr 3fr 4fr;
-                    grid-template-rows: 1fr 0.5fr 3.5fr;
                     transition: all 1s;
 
                     & .icon {
                         grid-column: 2 / 3;
                         grid-row: 1 / 3;
                         @include m.flex(center, start);
-                        z-index: 10;
+                        z-index: 5;
 
                         & .iconify {
                             @include m.sizing(4rem, 4rem);
@@ -182,15 +172,13 @@ main {
                 }
 
                 & .third-container {
-                    display: grid;
+                    @include m.grid(1fr 2fr 6fr 2fr 1fr, 1.5fr 2.5fr 5fr 2.5fr 1.5fr);
                     @include m.sizing(25%, 85%);
-                    grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-                    grid-template-rows: 1.5fr 2.5fr 5fr 2.5fr 1.5fr;
 
                     & .first-tape {
                         grid-column: 1 / 3;
                         grid-row: 1 / 3;
-                        z-index: 10;
+                        z-index: 5;
                         @include m.flex(center, center);
 
                         img {
@@ -215,8 +203,9 @@ main {
 
                             p {
                                 @include m.spaces(0, 0);
-                                @include m.fonts('Lora', normal, 600, 1.8rem, none);
+                                @include m.fonts('Nunito', normal, 600, 1.8rem, none);
                                 color: #663C11;
+                                z-index: 6;
                             }
                         }
                     }
@@ -224,10 +213,7 @@ main {
                     & .second-tape {
                         grid-column: 4 / 6;
                         grid-row: 4 / 6;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        z-index: 10;
+                        @include m.flex(center, center);
 
                         img {
                             @include m.sizing(6rem, 6rem);
@@ -238,8 +224,8 @@ main {
 
             & .methods-to-donate {
                 @include m.sizing(100%, 40%);
-                display: flex;
-                justify-content: center;
+                @include m.flex(center, none);
+                column-gap: 4rem;
 
                 & .box {
                     @include m.sizing(10%, 100%);
@@ -250,7 +236,7 @@ main {
 
                     & .title {
                         margin: 0;
-                        @include m.fonts('Lora', italic, bold, 2rem, none);
+                        @include m.fonts('Nunito', italic, bold, 2rem, none);
                         color: #FFF0D4;
                         text-shadow: 4px 4px 0px #663C11;
                         transition: all 1s;
@@ -266,7 +252,7 @@ main {
                         transition: all 1s;
 
                         svg {
-                            @include m.sizing(5.5rem, 6rem);
+                            @include m.sizing(6rem, 6rem);
                         }
                     }
 
@@ -336,70 +322,336 @@ main {
     }
 }
 
-/* @media (max-width: 1550px) {
-    .donations-title {
+@media (max-width: 1700px) {
 
-        h1.h1 {
-            font-size: 8rem !important;
+    main {
+
+        & #swipe-donations {
+
+            & .content-swipe-donations {
+
+                & .donations-explain {
+
+                    & .first-container {
+                        width: 27rem;
+
+                        .postit-left {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+
+                    & .second-container {
+                        width: 15rem;
+                    }
+
+                    & .third-container {
+                        width: 27rem;
+
+                        .postit-right {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.6rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
-} */
+}
+
+@media (max-width: 1500px) {
+
+    main {
+
+        & #swipe-donations {
+
+            & .content-swipe-donations {
+
+                & .donations-explain {
+
+                    .first-container {
+                        margin: 0rem 1rem;
+                    }
+
+                    .second-container {
+                        margin: 0rem 1rem 1rem 1rem;
+                    }
+
+                    .third-container {
+                        margin: 0rem 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+
+    main {
+
+        & #swipe-donations {
+
+            & .content-swipe-donations {
+
+                & .donations-explain {
+
+                    & .first-container {
+                        width: 22rem;
+                        height: 22rem;
+
+                        .postit-left {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+
+                    & .second-container {
+                        width: 15rem;
+                    }
+
+                    & .third-container {
+                        width: 22rem;
+                        height: 22rem;
+
+                        .postit-right {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .methods-to-donate {
+
+                    & .box {
+
+                        & .title {
+                            font-size: 1.5rem;
+                        }
+
+                        & .btn {
+                            width: 8.25rem;
+                            height: 8.25rem;
+
+                            & svg {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+
+                            & img {
+                                width: 5rem;
+                                height: 5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 @media (max-width: 1350px) {
-    .donations-title {
+    main {
 
-        h1 {
-            font-size: 8rem !important;
+        & #donations {
+
+            & .content-donations {
+
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+
+                        & .donations-title {
+
+                            h1 {
+                                font-size: 8rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 1150px) {
-    .donations-title {
+    main {
 
-        h1 {
-            font-size: 7rem !important;
+        & #donations {
+
+            & .content-donations {
+
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+
+                        & .donations-title {
+
+                            h1 {
+                                font-size: 7rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
 
 @media (max-width: 950px) {
-    .donations-title {
+    main {
 
-        h1 {
-            font-size: 6rem !important;
+        & #donations {
+
+            & .content-donations {
+
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+
+                        & .donations-title {
+
+                            h1 {
+                                font-size: 6rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
+
+/* @media (max-width: 1200px) {
+    main {
+
+        & #swipe-donations {
+
+            & .content-swipe-donations {
+                margin-bottom: 2rem;
+
+                & .donations-explain {
+                    @include m.sizing(100%, 80%);
+                    @include m.grid(2fr 0.5fr 2fr, 1fr 2fr);
+                    justify-items: center;
+
+                    & .first-container {
+                        width: 15rem;
+                        height: 29rem;
+                        margin-right: 3rem;
+                        grid-column: 1 / 3;
+                        grid-row: 2 / 3;
+
+                        .postit-left {
+
+                            & .text {
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+
+                    & .second-container {
+                        @include m.grid(15rem, 12rem);
+                        grid-column: 2 / 3;
+                        grid-row: 1 / 2;
+                    }
+
+                    & .third-container {
+                        grid-column: 2 / 4;
+                        grid-row: 2 / 3;
+                        width: 15rem;
+                        height: 29rem;
+                        margin-left: 3rem;
+
+                        .postit-right {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                & .methods-to-donate {
+                    @include m.sizing(100%, 20%);
+                    column-gap: 2rem;
+
+                    & .box {
+                        border-radius: 1.2rem;
+
+                        & .title {
+                            display: none;
+                        }
+
+                        & .btn {
+                            width: 6rem;
+                            height: 6rem;
+
+                            & svg {
+                                width: 3.5rem;
+                                height: 3.5rem;
+                            }
+
+                            & img {
+                                width: 3.5rem;
+                                height: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+} */
 
 @media (max-width: 850px) {
+    main {
 
-    .center-content {
-        width: 30rem !important;
+        & #donations {
 
-        & .donations-title {
+            & .content-donations {
 
-            h1 {
-                font-size: 4.5rem !important;
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+                        width: 30rem;
+
+                        & .donations-title {
+
+                            h1 {
+                                font-size: 4.5rem;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
-
-}
-
-@media (max-width: 500px) {
-
-    .center-content {
-        width: 30rem !important;
-
-        & .donations-title {
-
-            h1 {
-                font-size: 3.5rem !important;
-            }
-        }
-    }
-
 }
 
 @media (max-width: 640px) {
@@ -407,32 +659,14 @@ main {
         & #swipe-donations {
 
             & .content-swipe-donations {
-                @include m.sizing(100%, 75vh);
-                display: flex;
-                flex-direction: column;
-                color: #FFFFFF;
-                z-index: 2;
 
                 & .donations-explain {
-                    @include m.sizing(100%, 60%);
-                    @include m.flex(center, center);
                     flex-direction: column-reverse;
 
-                    & .box {
-                        @include m.spaces(0rem 5rem, 0);
-                    }
-
                     & .first-container {
-                        display: grid;
                         @include m.sizing(73%, 65%);
-                        grid-template-columns: 1fr 2fr 6fr 2fr 1fr;
-                        grid-template-rows: 1.5fr 2.5fr 5fr 2.5fr 1.5fr;
 
                         & .first-tape {
-                            grid-column: 1 / 3;
-                            grid-row: 1 / 3;
-                            z-index: 10;
-                            @include m.flex(center, center);
 
                             img {
                                 @include m.sizing(5rem, 5rem);
@@ -440,11 +674,6 @@ main {
                         }
 
                         & .postit-left {
-                            grid-column: 2 / 5;
-                            grid-row: 2 / 5;
-                            background-color: #FFF0D4;
-                            @include m.flex(center, center);
-                            @include m.sizing(100%, 100%);
 
                             & .corner {
                                 @include m.flex(start, end);
@@ -455,20 +684,12 @@ main {
                                 @include m.flex(center, center);
 
                                 p {
-                                    @include m.spaces(0, 0);
-                                    @include m.fonts('Lora', normal, 600, 1.4rem, none);
-                                    color: #663C11;
+                                    font-size: 1.4rem;
                                 }
                             }
                         }
 
                         & .second-tape {
-                            grid-column: 4 / 6;
-                            grid-row: 4 / 6;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            z-index: 10;
 
                             img {
                                 @include m.sizing(5rem, 5rem);
@@ -477,57 +698,25 @@ main {
                     }
 
                     & .second-container {
-                        display: grid;
                         @include m.sizing(55%, 30%);
                         @include m.spaces(0rem 0rem 1rem 0rem, 0);
-                        grid-template-columns: 4fr 3fr 4fr;
-                        grid-template-rows: 1fr 0.5fr 3.5fr;
-                        transition: all 1s;
 
                         & .icon {
-                            grid-column: 2 / 3;
-                            grid-row: 1 / 3;
-                            @include m.flex(center, start);
-                            z-index: 10;
 
                             & .iconify {
                                 @include m.sizing(3rem, 3rem);
-
-                                circle {
-                                    fill: #F9458E;
-                                }
-
-                                ellipse {
-                                    fill: white;
-                                }
-
-                                path {
-                                    fill: #99AAB5;
-                                }
                             }
                         }
 
                         & .postit-center {
-                            grid-column: 1 / 4;
-                            grid-row: 2 / 4;
-                            background-color: #FFF0D4;
 
                             & .title {
-                                @include m.sizing(100%, 100%);
-                                @include m.flex(center, center);
-                                color: #F9458E;
 
                                 h1 {
-                                    @include m.spaces(0, 0);
                                     font-size: 2rem;
                                 }
                             }
                         }
-                    }
-
-                    & .second-container:hover {
-                        transform: scale(110%, 110%);
-                        transition: all 1s;
                     }
 
                     & .third-container {
@@ -536,82 +725,30 @@ main {
                 }
 
                 & .methods-to-donate {
-                    width: 100%;
-                    height: 35%;
-                    display: grid;
-                    grid-template-columns: repeat(3, 1fr);
-                    grid-template-rows: repeat(2, 1fr);
+                    @include m.sizing(100%, 35%);
+                    @include m.grid(repeat(3, 1fr), repeat(2, 1fr));
                     justify-items: center;
+                    column-gap: 0;
 
                     & .box {
                         @include m.sizing(auto, auto);
-                        @include m.flex(center, center);
-                        flex-direction: column;
-                        @include m.spaces(0rem 1rem, 0);
-                        transition: all 1s;
 
                         & .title {
                             display: none;
                         }
 
                         & .btn {
-                            @include m.sizing(4.7rem, 4.7rem);
+                            @include m.sizing(5.5rem, 5.5rem);
                             @include m.flex(center, center);
                             @include m.spaces(1.5rem 0rem 0rem 0rem, 0);
-                            background-color: #FFF0D4;
                             border-radius: 0.625rem;
-                            box-shadow: 12px 12px 0px #663C11;
-                            transition: all 1s;
 
                             svg {
-                                @include m.sizing(2.5rem, 2.75rem);
+                                @include m.sizing(3.5rem, 3.75rem);
                             }
 
                             img {
-                                @include m.sizing(2.5rem, 2.75rem);
-                            }
-                        }
-
-                        & .paypal {
-
-                            & .iconify {
-
-                                & path:nth-child(1),
-                                path:nth-child(2),
-                                path:last-child {
-                                    fill: #663C11;
-                                }
-
-                                & path:nth-child(3) {
-                                    fill: #ffffff;
-                                }
-                            }
-                        }
-
-                        & .ko-fi {
-                            svg {
-                                color: #663C11;
-                            }
-                        }
-
-                        & .klarna {
-                            svg {
-                                color: #663C11;
-                            }
-                        }
-
-                        & .credit {
-
-                            & .iconify {
-
-                                & path:nth-child(1) {
-                                    fill: #663C11;
-                                }
-
-                                & path:nth-child(2),
-                                path:nth-child(3) {
-                                    fill: #ffffff;
-                                }
+                                @include m.sizing(3.5rem, 3.75rem);
                             }
                         }
                     }
@@ -639,24 +776,6 @@ main {
                     & .fifth {
                         grid-column: 2 / 4;
                         grid-row: 2 / 3;
-                    }
-
-                    & .box:hover {
-                        transition: all 1s;
-
-                        & .title {
-                            transform: translate(12px, 4px);
-                            text-shadow: none;
-                            font-size: 2rem;
-                            background-color: #663C11;
-                            padding: 0.5rem 1rem;
-                            border-radius: 10px;
-                        }
-
-                        & .btn {
-                            transform: translate(12px, 12px);
-                            box-shadow: none;
-                        }
                     }
                 }
             }
@@ -691,8 +810,78 @@ main {
     }
 }
 
+@media (max-width: 500px) {
+    main {
+        & #swipe-donations {
+
+            & .content-donations {
+
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+                        width: 30rem;
+
+                        & .donations-title {
+
+                            h1 {
+                                font-size: 3.5rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        & #swipe-donations {
+
+            & .content-swipe-donations {
+
+                & .donations-explain {
+
+                    & .first-container {
+                        height: 18rem;
+
+                        & .postit-left {
+
+                            & .text {
+
+                                p {
+                                    font-size: 1.2rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 440px) {
     main {
+        & #donations {
+
+            & .content-donations {
+
+                & .slide-left-2 {
+
+                    & .center-content-donations {
+                        width: 25rem;
+
+                        & .donations-title {
+                            h1 {
+                                font-size: 3rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         & #swipe-donations {
 
             & .content-swipe-donations {
@@ -737,21 +926,6 @@ main {
                             }
                         }
                     }
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 480px) {
-
-    main {
-        & .postit-left {
-
-            & .text {
-
-                p {
-                    font-size: 1.1rem !important;
                 }
             }
         }

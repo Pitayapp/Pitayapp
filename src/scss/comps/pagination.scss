@@ -38,7 +38,7 @@ body {
         background-color: rgb(255, 255, 255);
         @include m.sizing(3rem, 3rem);
         @include m.flex(center, center);
-        @include m.fonts('Lora', normal, bold, 2rem, none);
+        @include m.fonts('Nunito', normal, bold, 2rem, none);
         border-radius: 10%;
         border: 2px solid #979797;
         opacity: 1;
@@ -69,7 +69,7 @@ body {
         @include m.flex(space-evenly, center);
 
         span {
-            @include m.fonts('Lora', normal, bold, 1.8rem, none);
+            @include m.fonts('Nunito', normal, bold, 1.8rem, none);
             color: white;
         }
     }
@@ -119,7 +119,7 @@ body {
         right: 3rem;
         padding: 1.5rem 1rem;
         z-index: 2;
-        width: 10.8rem;
+        width: 11rem;
         display: flex;
         justify-content: end;
         height: 23rem;
@@ -151,18 +151,21 @@ body {
 
             & .deploy {
                 #line1 {
-                    d: path("M 0 0 L 50 50");
+                    d: path("M 10 10 L 40 40");
                     stroke: #F9458E;
+                    stroke-width: 6;
                 }
 
                 #line2 {
                     d: path("M 25 25 L 25 25");
                     stroke: #F9458E;
+                    stroke-width: 6;
                 }
 
                 #line3 {
-                    d: path("M 0 50 L 50 0");
+                    d: path("M 10 40 L 40 10");
                     stroke: #F9458E;
+                    stroke-width: 6;
                 }
             }
         }
@@ -177,7 +180,7 @@ body {
             right: 0;
 
             span {
-                @include m.fonts('Lora', normal, bold, 1.8rem, none);
+                @include m.fonts('Nunito', normal, bold, 1.8rem, none);
                 color: #F9458E;
             }
         }

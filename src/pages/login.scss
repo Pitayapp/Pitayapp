@@ -1,11 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"); */
+@import url('https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html,
 body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Lora, serif;
+    font-family: Nunito, serif;
     width: 100vw;
     height: 100vh;
 
@@ -89,6 +90,7 @@ body {
                 border: 1px solid #F9458E;
                 color: #F9458E;
                 width: 100%;
+                font-family: Nunito, serif;
                 cursor: pointer;
                 font-size: 0.9rem;
                 font-weight: bold;

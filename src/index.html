@@ -17,11 +17,13 @@
 <body>
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <img src="./svg/pitayappLogo.svg" alt="Pitayapp">
-        <div class="title">
-          <p class="header-title">Pitayapp</p>
-        </div>
+      <div class="container">
+        <a href="https://web.pitayapp.com/login" class="logo">
+          <img src="./svg/pitayappLogo.svg" alt="Pitayapp">
+          <div class="title">
+            <p class="header-title">Pitayapp</p>
+          </div>
+        </a>
       </div>
     </nav>
   </header>
@@ -38,9 +40,12 @@
     <aside class="hamburguer">
       <div class="icon">
         <svg id="menu" height="50" width="50" xmlns="http://www.w3.org/2000/svg">
-          <path id="line1" d="M 0 5 L 50 5" stroke="white" stroke-width="5" />
-          <path id="line2" d="M 0 25 L 50 25" stroke="white" stroke-width="5" />
-          <path id="line3" d="M 0 45 L 50 45" stroke="white" stroke-width="5" />
+          <path id="line1" d="M 0 5 L 50 5" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="5" />
+          <path id="line2" d="M 0 25 L 50 25" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="5" />
+          <path id="line3" d="M 0 45 L 50 45" stroke="white" stroke-linecap="round" stroke-linejoin="round"
+            stroke-width="5" />
         </svg>
       </div>
       <div class="swiper-pagination pagination-extra" id="deploy-nav-pag"></div>
@@ -52,7 +57,7 @@
             <div class="swiper-slide" id="donations">
               <div class="content-donations">
                 <div class="slide-left-2">
-                  <div class="center-content">
+                  <div class="center-content-donations">
                     <div class="donations-title">
                       <h1>¿Quieres apoyarnos?</h1>
                     </div>
@@ -241,8 +246,10 @@
               </div>
             </div>
             <div class="buttons">
-              <a class="btn register" href="./pages/register.html">REGÍSTRATE</a>
-              <a class="btn sign-in" href="./pages/login.html">INICIAR SESIÓN</a>
+              <a href="https://web.pitayapp.com/register" class="btn register">REGÍSTRATE</a>
+              <a href="https://web.pitayapp.com/login" class="btn sign-in">INICIAR SESIÓN</a>
+              <!-- <a class="btn register" href="./pages/register.html">REGÍSTRATE</a>
+              <a class="btn sign-in" href="./pages/login.html">INICIAR SESIÓN</a> -->
             </div>
             <!-- <div class="guest">Entrar como invitado</div> -->
           </div>
@@ -595,19 +602,42 @@
         </div>
       </div>
       <div class="swiper-slide" id="contact-with-us">
-        <div class="content-contact">
-          <div class="slide-right-2">
-            <div class="center-content">
-              <h1>Contáctanos por</h1>
-              <div class="social-media-logos">
-                <div class="logo-bar">
-                  <span class="iconify" id="instagram" data-width="70" data-icon="cib:instagram"></span>
-                  <span class="iconify" data-width="70" data-icon="brandico:facebook-rect"></span>
-                  <span class="iconify" data-width="70" data-icon="entypo:email"></span>
-                  <span class="iconify" data-width="70" data-icon="brandico:linkedin-rect"></span>
-                  <span class="iconify" data-icon="entypo-social:twitter-with-circle"></span>
-                </div>
-              </div>
+        <div class="center-content">
+          <div class="title-contact">
+            <h1>Contáctanos</h1>
+          </div>
+        </div>
+        <div class="social-media-logos">
+          <div class="logo-bar">
+            <div class="media one">
+              <a href="https://www.instagram.com/" target="_blank" class="button insta">
+                <span class="iconify" id="instagram" data-width="70" data-icon="cib:instagram"></span>
+              </a>
+              <p class="title-insta">Instagram</p>
+            </div>
+            <div class="media two">
+              <a href="https://www.facebook.com/" target="_blank" class="button fcbook">
+                <span class="iconify" data-width="70" data-icon="brandico:facebook-rect"></span>
+              </a>
+              <p class="title-fcbook">Facebook</p>
+            </div>
+            <div class="media three">
+              <a href="mailto:" target="_blank" class="button email">
+                <span class="iconify" data-width="70" data-icon="entypo:email"></span>
+              </a>
+              <p class="title-email">Email</p>
+            </div>
+            <div class="media four">
+              <a href="https://www.linkedin.com/home" target="_blank" class="button linkedin">
+                <span class="iconify" data-width="70" data-icon="brandico:linkedin-rect"></span>
+              </a>
+              <p class="title-linkedlin">LinkedlIn</p>
+            </div>
+            <div class="media five">
+              <a href="https://twitter.com/?lang=es" target="_blank" class="button twitter">
+                <span class="iconify" data-icon="entypo-social:twitter-with-circle"></span>
+              </a>
+              <p class="title-twitter">Twitter</p>
             </div>
           </div>
         </div>
