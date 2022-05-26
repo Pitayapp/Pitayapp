@@ -1,4 +1,4 @@
-@use '../mixins/mixins.scss'as m;
+@use '../mixins/mixins.scss' as m;
 
 main {
     & #about-us {
@@ -237,6 +237,7 @@ main {
                     }
 
                     & .div4 {
+                        @include m.backgrounds(url(./img/chapetitas.jpg), cover, center, no-repeat);
                         background-color: rgb(218, 218, 218);
                         grid-row-start: 3;
                         grid-column-start: 3;
@@ -314,6 +315,7 @@ main {
                     }
 
                     & .div7 {
+                        @include m.backgrounds(url(./img/noelia-pitayappteam.jpg), cover, center, no-repeat);
                         background-color: rgb(218, 218, 218);
                         grid-row-start: 5;
                         grid-column-start: 4;
