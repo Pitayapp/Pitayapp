@@ -4,7 +4,7 @@ main {
     & #about-us {
         position: relative;
         @include m.sizing(100vw, 100vh);
-        @include m.backgrounds(url(./img/aboutUsPic.jpg), cover, center, no-repeat);
+        @include m.backgrounds(url(./img/aboutUsPic-compressed.jpg), cover, center, no-repeat);
         @include m.flex(center, center);
         flex-direction: column;
 
@@ -52,7 +52,7 @@ main {
     & #swipe-up-about-us {
         position: relative;
         @include m.sizing(100vw, 100vh);
-        @include m.backgrounds(url(./img/aboutUsPic.jpg), cover, center, no-repeat);
+        @include m.backgrounds(url(./img/aboutUsPic-compressed.jpg), cover, center, no-repeat);
         @include m.flex(center, center);
         // @include flex(space-between, center);
 

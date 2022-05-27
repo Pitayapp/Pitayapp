@@ -1,11 +1,11 @@
-@use '../mixins/mixins.scss'as m;
+@use '../mixins/mixins.scss' as m;
 
 main {
     & #donations {
         position: relative;
         @include m.sizing(100vw, 100vh);
         @include m.flex(center, center);
-        @include m.backgrounds(url(./img/donationsPic.jpg), cover, center, no-repeat);
+        @include m.backgrounds(url(./img/donationsPic-compressed.jpg), cover, center, no-repeat);
         flex-direction: column;
 
         & .content-donations {
@@ -40,7 +40,7 @@ main {
         position: relative;
         @include m.sizing(100vw, 100vh);
         @include m.flex(center, center);
-        @include m.backgrounds(url(./img/donationsPic.jpg), cover, center, no-repeat);
+        @include m.backgrounds(url(./img/donationsPic-compressed.jpg), cover, center, no-repeat);
         flex-direction: column;
 
         & .layer-white {
