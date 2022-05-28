@@ -107,7 +107,6 @@ main {
                     & .our-team-title {
                         font-size: 2rem;
                         font-weight: bold;
-
                     }
 
                     & #github {
@@ -121,7 +120,6 @@ main {
                         margin-top: 30px;
                         margin-left: 40px;
                     }
-
                 }
 
                 & .circle-container {
@@ -136,7 +134,7 @@ main {
                     gap: 15px;
 
                     & .div1 {
-                        @include m.backgrounds(url(./img/javi-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/javi-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         grid-row-start: 1;
                         grid-column-start: 2;
                         grid-row-end: 3;
@@ -157,7 +155,6 @@ main {
                                 text-align: center;
                                 text-decoration: none;
                                 margin: 20px;
-
                             }
 
                             &:hover {
@@ -166,12 +163,10 @@ main {
                                 transition: .5s ease-in-out;
                             }
                         }
-
-
                     }
 
                     & .div2 {
-                        @include m.backgrounds(url(./img/antonio-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/antonio-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         grid-row-start: 1;
                         grid-column-start: 4;
                         grid-row-end: 3;
@@ -192,7 +187,6 @@ main {
                                 text-align: center;
                                 text-decoration: none;
                                 margin: 20px;
-
                             }
 
                             &:hover {
@@ -204,7 +198,7 @@ main {
                     }
 
                     & .div3 {
-                        @include m.backgrounds(url(./img/andrea-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/andrea-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         grid-row-start: 3;
                         grid-column-start: 1;
                         grid-row-end: 5;
@@ -225,7 +219,6 @@ main {
                                 text-align: center;
                                 text-decoration: none;
                                 margin: 20px;
-
                             }
 
                             &:hover {
@@ -237,7 +230,7 @@ main {
                     }
 
                     & .div4 {
-                        @include m.backgrounds(url(./img/chapetitas.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/chapetitas-compressed.jpg), cover, center, no-repeat);
                         background-color: rgb(218, 218, 218);
                         grid-row-start: 3;
                         grid-column-start: 3;
@@ -249,7 +242,7 @@ main {
                     }
 
                     & .div5 {
-                        @include m.backgrounds(url(./img/irene-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/irene-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         grid-row-start: 3;
                         grid-column-start: 5;
                         grid-row-end: 5;
@@ -282,7 +275,7 @@ main {
                     }
 
                     & .div6 {
-                        @include m.backgrounds(url(./img/regy-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/regy-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         grid-row-start: 5;
                         grid-column-start: 2;
                         grid-row-end: 7;
@@ -314,7 +307,7 @@ main {
                     }
 
                     & .div7 {
-                        @include m.backgrounds(url(./img/noelia-pitayappteam.jpg), cover, center, no-repeat);
+                        @include m.backgrounds(url(./img/noelia-pitayappteam-compressed.jpg), cover, center, no-repeat);
                         background-color: rgb(218, 218, 218);
                         grid-row-start: 5;
                         grid-column-start: 4;
