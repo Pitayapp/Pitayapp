@@ -304,40 +304,7 @@ main {
                             -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
                             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
                         }
-
-                        /* font-size: 8rem;
-                        display: flex;
-                        justify-content: center;
-                        cursor: pointer;
-
-                        & #left_knife {
-                            color: #FFFFFF;
-                            left: 50px;
-                            -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
-                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
-                            // transform: rotate(-45deg);
-                        }
-
-                        & #right_knife {
-                            color: #F9458E;
-                            right: 50px;
-                            -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
-                            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .7));
-                            // transform: matrix(-0.71, -0.71, -0.71, 0.71, 0, 0);
-                            transform: scaleX(-1);
-                        } */
                     }
-
-                    //Este texto decidimos eliminarlo, lo comento por si hay un cambio de planes
-                    /* & .pink_text {
-                        color: #F9458E;
-                        text-align: center;
-                        font-size: 1.5rem;
-                        font-family: 'Nunito';
-                        font-style: italic;
-                        font-weight: bold;
-                        padding: 0 2rem 2rem;
-                    } */
                 }
             }
 
@@ -384,7 +351,7 @@ main {
 
                         & .pink_text {
                             font-size: 1.8rem;
-                            @include m.sizing(60%, none); //60% cuando cambiamos al popup
+                            @include m.sizing(60%, none);
                         }
                     }
                 }
@@ -468,10 +435,10 @@ main {
                         justify-content: center;
                         padding: 1.5rem;
                         box-sizing: border-box;
-                        line-height: 120%;
+                        line-height: 80%;
 
                         & h2 {
-                            font-size: 1.5rem;
+                            font-size: 1.2rem;
                             font-family: 'Nunito';
                             font-style: normal;
                             font-weight: 700;
@@ -704,8 +671,13 @@ main {
                     & .first-text {
                         height: 50%;
 
+                        & h2 {
+                            font-size: 1.5rem;
+                        }
+
                         & .middle-text-container {
-                            padding: 1rem;
+                            padding: 0.8rem;
+                            line-height: 80%;
                         }
                     }
                 }
@@ -716,8 +688,16 @@ main {
                     & .second-text {
                         height: 50%;
 
+                        & h2 {
+                            font-size: 1.5rem;
+                        }
+
                         & .middle-text-container {
-                            padding: 1rem;
+                            padding: 0.8rem;
+
+                            & p {
+                                line-height: 80%;
+                            }
                         }
                     }
                 }
@@ -727,10 +707,10 @@ main {
                     width: 4%;
 
                     & .secondary-title {
-                        font-size: 3.5rem;
+                        font-size: 2.5rem;
                         text-align: center;
                         color: #F9458E;
-                        margin-top: 4rem;
+                        margin-top: 2rem;
                         z-index: 3;
                     }
 
