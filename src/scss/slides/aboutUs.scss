@@ -57,6 +57,9 @@ main {
         // @include flex(space-between, center);
 
         & .pink-background {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: fixed;
             @include m.sizing(100vw, 100vh);
             background-color: rgba(249, 69, 142, 0.4);
@@ -453,7 +456,7 @@ main {
 
                     & .circle-container {
 
-                        @include m.sizing(250px, 250px);
+                        @include m.sizing(270px, 270px);
                         padding: 25px;
                         display: grid;
                         margin-top: 20px;
